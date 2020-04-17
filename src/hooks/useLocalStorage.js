@@ -12,10 +12,10 @@ export const useLocalStorage = (key , initialValue)=> {
 
   const setValue = value => {
       // Save state
-    setStoredValue(value);
+    setStoreValue(value);
     //Save to local storage
-    window.localStorage.setItem(key.JSON.stringify(value));
+    window.localStorage.setItem(key,JSON.stringify(value));
   }
-
-
+  
+  return [storeValue,setStoreValue]
 }
