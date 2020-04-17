@@ -1,5 +1,7 @@
 import React from "react";
 import Chart from "./Chart";
+import {useDarkMode} from '../hooks/useDarkMode';
+
 
 const Charts = ({ coinData }) => {
   return (
