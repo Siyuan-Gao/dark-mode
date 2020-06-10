@@ -9,5 +9,5 @@ import { useState } from "react";
     setStoredValue(value);
     window.localStorage.setItem(key, JSON.stringify(value));
   };
-  return [storedValue,setValue];
+  return [storedValue,setStoredValue]
 };
